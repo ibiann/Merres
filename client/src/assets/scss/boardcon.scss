@@ -1,0 +1,68 @@
+@import 'settings';
+
+.app-column-board {
+  // background-color: $board-content-background-color;
+  height: $board-content-height;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  &:after {
+    content: '';
+    flex: 0 0 $gap;
+  }
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.24);
+    border-right: 8px;
+  }
+
+  .not-found {
+    color: red; //default when using initial datasets
+  }
+
+  //column dnd styles
+  .column-drop-view {
+    margin: 5px 45px 5px 5px;
+  }
+
+  .add-new-column {
+    width: 250px;
+    max-width: 250px;
+    line-height: 32px;
+    padding: 2px 0 4px 16px;
+    cursor: pointer;
+    color: $text-adding-column-element-color;
+    font-size: 15px;
+    background-color: rgb(178, 190, 195);
+    margin-top: $gap;
+    margin-left: $gap;
+    border-radius: $element-radius;
+    &:hover {
+      background-color: $adding-column-element-hover-color;
+    }
+  }
+  .enter-new-column {
+    max-width: 250px;
+    background-color: $board-content-column-color;
+    line-height: 32px;
+    margin-top: $gap;
+    padding: 4px 10px;
+    margin-left: $gap;
+    border-radius: $element-radius;
+    input.input-box {
+      margin: 5px 0;
+      &:focus {
+        border-color: $fade-text-color;
+      }
+    }
+  }
+}
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none;
+}
