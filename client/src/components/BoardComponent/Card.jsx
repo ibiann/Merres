@@ -243,7 +243,7 @@ function Card(props) {
           setSpinLoading(false)
           const data = await deleteCard(card._id)
 
-          message.success('Deleted succesfully')
+          message.success('Deleted successfully')
           navigate(0)
         } catch (error) {
           console.log(error)

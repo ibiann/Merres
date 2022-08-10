@@ -121,7 +121,7 @@ function Column(props) {
         try {
           const data = await deleteColumn(column._id)
           setSpinLoading(false)
-          message.success('Deleted succesfully')
+          message.success('Deleted successfully')
           // setInvitedUsers(data.invitedUsers)
           navigate(0)
         } catch (error) {

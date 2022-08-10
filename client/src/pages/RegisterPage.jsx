@@ -69,7 +69,7 @@ const RegisterPage = () => {
     try {
       const data = await registerApi(form)
       localStorage.setItem('token', JSON.stringify(data.token))
-      message.success('Register Succesfully')
+      message.success('Register Successfully')
       navigate(0)
       navigate('/boards')
     } catch (error) {
