@@ -83,7 +83,7 @@ function BoardCon() {
         }
       }
     }
-    // const checkeExistedInBoard = (invitedUsers, currentUser, board) => {
+    // const checkExistedInBoard = (invitedUsers, currentUser, board) => {
     //   let accessRight =
     //     invitedUsers.map((user) => user._id).includes(currentUser._id) ||
     //     currentUser._id === board.user_id

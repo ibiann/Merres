@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './settingbox.scss'
+import '../../assets/scss/settingbox.scss'
 import { MODAL_CLOSE, MODAL_CONFIRM } from '../../util/const'
 import useApp from '../../util/getContext'
 import { Button, Modal, Select, Form, Input, Upload, message, Spin } from 'antd'

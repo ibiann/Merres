@@ -196,7 +196,7 @@ function Column(props) {
           ))}
         </Container>
 
-        {/* copy similar form from board content */}
+        {/* using similiar form of board content */}
         {openNewCardForm && (
           <div className="add-new-card">
             <Form.Control
