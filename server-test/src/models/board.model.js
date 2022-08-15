@@ -102,7 +102,7 @@ const getAll = async (user_id, search) => {
     //   .find({})
     //   .toArray()
     // console.log(allBoards)
-    return result
+    return result 
   } catch (error) {
     throw new Error(error)
   }
